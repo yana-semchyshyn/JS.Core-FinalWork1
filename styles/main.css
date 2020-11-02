@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    padding-top: 2%;
+    width: 900px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.mainBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textBox, .edition{
+    padding: 20px 30px;
+    width: 100%;
+    background-color: rgba(238, 237, 237, 0.925);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.textBox{
+    min-height: 260px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.edition{
+    min-height: 260px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.buttonsBox {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.editButtons input {
+    width: 65px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+}
+
+.edit{
+    background-color: rgb(255, 189, 0);
+}
+
+.edit:focus{
+    box-shadow: 0 0 0 2pt  rgb(255, 215, 105);
+    outline: none;
+}
+
+.style{
+    color: white;
+    background-color: steelblue;
+}
+
+.style:focus{
+    box-shadow: 0 0 0 2pt rgb(107, 166, 214);
+    outline: none;
+}
+
+.editBox {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+textarea:focus{
+    box-shadow: 0 0 0 2pt lightskyblue;
+    outline: none;
+}
+
+.textareaButtons{
+    width: 135px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addButton, .save{
+    width: 65px;
+    height: 45px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.addButton{
+    background-color:  rgb(236, 43, 43);
+}
+
+.save{
+    background-color: rgb(34, 149, 69);
+}
+
+.addButton:focus, .save:focus{
+    outline: none;
+}
+
+.addButton:hover{
+    background-color: red;
+}
+
+.save:hover{
+    background-color: green;
+}
+
+.styleBox {
+    width: 100%;
+    height: 270px;
+    flex-direction: row;
+}
+
+.styleTools1{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.radioButtons form{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radioButtons input {
+    width: 17px;
+    height: 17px;
+}
+
+.radioButtons div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 28px;
+}
+
+.radio{
+    margin-right: 4px;
+}
+
+.fontFamilyForm select{
+    width: 380px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.fontFamilyForm select:focus, .textInput:focus, .setBorderStyle .borderType:focus, .setBorderStyle .borderColor:focus, .typeOfMarks:focus{
+    box-shadow: 0 0 0 2pt lightskyblue;
+    outline: none;
+}
+
+.toolsSection{
+    height: 65px;
+}
+
+.textColor{
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: dimgray;
+    border-radius: 5px;
+}
+
+.backgroundColor{
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background-color: dimgray;
+    border: none;
+    border-radius: 5px;
+}
+
+.textColor:focus, .backgroundColor:focus{
+    box-shadow: 0 0 0 2pt rgb(184, 183, 183);
+    outline: none;
+}
+
+#check1, #check2{
+    width: 17px;
+    height: 17px;
+}
+
+.editFontWeight{
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.styleToolsBox2{
+    width: 500px;
+    height: 270px;
+}
+
+.textColorBoxes{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 210px;
+    height: 210px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.backgroundColorBoxes{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 210px;
+    height: 210px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.textColorBox, .backgroundColorBox{
+    width: 70px;
+    height: 70px;
+}
+
+.addElemBox{
+    padding: 20px 30px;
+    width: 100%;
+    min-height: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(238, 237, 237, 0.925);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.addTools{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.addTools form{
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.addTools form div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.addTools form input{
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+}
+
+.createTable{
+    height: 320px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.createTrTd{
+    margin-top: 15px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.createTr, .createTd, .setTdWidth, .setTdHeight, .setBorderStyle, .countLi, .setMarks{
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setMarks{
+    margin-top: 8px;
+}
+
+.createTr input, .createTd input, .setTdWidth input, .setTdHeight input, .countLi input, .typeOfMarks{
+    padding-left: 5px;
+    width: 710px;
+    height: 35px;
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.addTableStyle{
+    margin-top: 10px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.setBorderStyle input{
+    padding-left: 5px;
+    width: 155px;
+    height: 35px;
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.setBorderStyle .borderType, .setBorderStyle .borderColor{
+    padding-left: 5px;
+    width: 140px;
+    height: 35px;
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.createTableButton input, .createListButton input{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(34, 149, 69);
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s all linear;
+}
+
+.createTableButton input:hover, .createListButton input:hover{
+    background-color: green;
+}
+
+.createTableButton input:focus, .createListButton input:focus{
+    outline: none;
+}
+
+.createList{
+    margin-top: 10px;
+    height: 130px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add {
+    display: flex;
+}
+
+.remove {
+    display: none;
+}

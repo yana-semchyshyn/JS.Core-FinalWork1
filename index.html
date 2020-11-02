@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mainBox add">
+            <div class="textBox">
+                <p> Lorem ipsum dolor sit amet.</p>
+                <p> Lorem ipsum dolor sit amet.</p>
+                <p> Lorem ipsum dolor sit amet.</p>
+                <p> Lorem ipsum dolor sit amet.</p>
+                <p> Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="buttonsBox">
+                <form name="edit-buttons" class="editButtons">
+                    <input type="button" value='edit' name='edit' class='edit'>
+                    <input type="button" value='style' name='style' class='style'>
+                </form>
+            </div>
+            <div class="edition">
+                <div class="editBox remove">
+                    <textarea name="" id="" cols="5" rows="8"></textarea>
+                    <div class="textareaButtons">
+                        <input type="button" value="add" name='add' class='addButton'>
+                        <input type="button" value='save' name='save' class='save'>
+                    </div>
+                </div>
+                <div class="styleBox remove">
+                    <div class="styleToolsBox1">
+                        <div class='toolsSection'>
+                            <h5>Font style:</h5>
+                            <div class="radioButtons">
+                                <form name='radio'>
+                                    <div>
+                                        <input type="radio" id='fontSize1' name='size' class='radio' value='12px'>
+                                        <label for="fontSize1">12px</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id='fontSize2' name='size' class='radio' value='14px'>
+                                        <label for="fontSize2">14px</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id='fontSize3' name='size' checked class='radio'
+                                            value='16px'>
+                                        <label for="fontSize3">16px</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id='fontSize4' name='size' class='radio' value='18px'>
+                                        <label for="fontSize4">18px</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id='fontSize5' name='size' class='radio' value='20px'>
+                                        <label for="fontSize5">20px</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class='toolsSection'>
+                            <h5>Font Family:</h5>
+                            <form name='font-family' class='fontFamilyForm'>
+                                <select name="fontfamily" class='fontFamilySelect'>
+                                    <option value="Choose option" selected disabled name='font'>Choose option</option>
+                                    <option value="cursive" name='font'>cursive</option>
+                                    <option value="fantasy" name='font'>fantasy</option>
+                                    <option value="monospace" name='font'>monospace</option>
+                                    <option value="sens-serif" name='font'>sens-serif</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class='toolsSection'>
+                            <h5>Colors:</h5>
+                            <form name='editColors' class='editColors'>
+                                <input type="button" value="Color of Text" name='textColor' class='textColor'>
+                                <input type="button" value='Background color' name='backgroundColor'
+                                    class='backgroundColor'>
+                            </form>
+                        </div>
+                        <div class='toolsSection'>
+                            <h5>Style:</h5>
+                            <form name='weight' class='editFontWeight'>
+                                <div>
+                                    <input type="checkbox" name='weight' id='check1' value='bold'>
+                                    <label for="check1">Bold text</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name='weight' id='check2' value='italic'>
+                                    <label for="check2">Cursive text</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="styleToolsBox2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="addElemBox remove">
+            <div class="addTools">
+                <h2>Choose what you want:</h2>
+                <form name='addElem'>
+                    <div>
+                        <input type="radio" id='addRadioButton1' name='addRadioButton' value='table'>
+                        <label for="addRadioButton1">table</label>
+                    </div>
+                    <div>
+                        <input type="radio" id='addRadioButton2' name='addRadioButton' value='list'>
+                        <label for="addRadioButton2">list</label>
+                    </div>
+                </form>
+            </div>
+            <div class="createTable remove">
+                <form name='createTableTools'>
+                    <div class="createTrTd">
+                        <div class="createTr">
+                            <p>Count TR:</p>
+                            <input type="text" name='AmountOfTr' placeholder="Count TR:" class='textInput create_tr'>
+                        </div>
+                        <div class="createTd">
+                            <p>Count TD:</p>
+                            <input type="text" name='AmountOfTd' placeholder="Count TD:" class='textInput create_td'>
+                        </div>
+                    </div>
+                    <div class="addTableStyle">
+                        <h3>Add style to your table:</h3>
+                        <div class="setTdWidth">
+                            <p>Width of TD:</p>
+                            <input type="text" name='WidthOfTd' placeholder="Width of TD:" class='textInput tableWidth'>
+                        </div>
+                        <div class="setTdHeight">
+                            <p>Height of TD:</p>
+                            <input type="text" name='HeightOfTd' placeholder="Height of TD:"
+                                class='textInput tableHeight'>
+                        </div>
+                        <div class="setBorderStyle">
+                            <p>Width of border:</p>
+                            <input type="text" name='setBorderWidth' placeholder="Width:" class='textInput borderWidth'>
+                            <p>type of border:</p>
+                            <form name='borderType'>
+                                <select class="borderType">
+                                    <option value="dashed">dashed</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="none">none</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="solid" selected>solid</option>
+                                </select>
+                            </form>
+                            <p>Color of border:</p>
+                            <form name='borderColor'>
+                                <select class="borderColor">
+                                    <option value="black" selected>black</option>
+                                    <option value="red">red</option>
+                                    <option value="blue">blue</option>
+                                    <option value="green">green</option>
+                                </select>
+                            </form>
+                        </div>
+                        <form name='createTableButton' class='createTableButton'>
+                            <input type="button" value="Create table">
+                        </form>
+                    </div>
+                </form>
+            </div>
+            <div class="createList remove">
+                <form name='createListTools'>
+                    <div class="countLi">
+                        <p>Count Li:</p>
+                        <input type="text" name='countLi' placeholder="Count Li:" class='textInput count_li'>
+                    </div>
+                    <div class="setMarks">
+                        <p>Type of marks:</p>
+                        <select class="typeOfMarks">
+                            <option value="circle" selected>circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select>
+                    </div>
+                </form>
+                <form name='createListButton' class='createListButton'>
+                    <input type="button" value="Create list">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
